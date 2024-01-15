@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suscripcions",
+  "info": {
+    "singularName": "suscripcion",
+    "pluralName": "suscripcions",
+    "displayName": "suscripcion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan": {
+      "type": "enumeration",
+      "enum": [
+        "FEE",
+        "PAID"
+      ]
+    },
+    "costo": {
+      "type": "float"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "suscripcions"
+    }
+  }
+}

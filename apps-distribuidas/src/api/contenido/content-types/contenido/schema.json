@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenidos",
+  "info": {
+    "singularName": "contenido",
+    "pluralName": "contenidos",
+    "displayName": "contenido",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "URI": {
+      "type": "text"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "VIDEO",
+        "IMAGE",
+        "FILE"
+      ]
+    },
+    "suscripcions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::suscripcion.suscripcion"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

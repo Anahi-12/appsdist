@@ -1,0 +1,37 @@
+apps-distribuidas/node_modules/
+apps-distribuidas/build/
+apps-distribuidas/strapi/
+
+HELP.md
+Orquesta/target/
+!Orquesta/.mvn/wrapper/maven-wrapper.jar
+!Orquesta/**/src/main/**/target/
+!Orquesta/**/src/test/**/target/
+
+### STS ###
+Orquesta/.apt_generated
+Orquesta/.classpath
+Orquesta/.factorypath
+Orquesta/.project
+Orquesta/.settings
+Orquesta/.springBeans
+Orquesta/.sts4-cache
+
+### IntelliJ IDEA ###
+Orquesta/.idea
+Orquesta/*.iws
+Orquesta/*.iml
+Orquesta/*.ipr
+
+### NetBeans ###
+Orquesta//nbproject/private/
+Orquesta//nbbuild/
+Orquesta//dist/
+Orquesta//nbdist/
+Orquesta//.nb-gradle/
+Orquesta/build/
+Orquesta/!**/src/main/**/build/
+Orquesta/!**/src/test/**/build/
+
+### VS Code ###
+Orquesta/.vscode/
